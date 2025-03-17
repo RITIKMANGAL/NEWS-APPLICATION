@@ -1,0 +1,92 @@
+/* NewsCard container with smooth hover lift */
+.news-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container for interactive effects */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover .image-container img {
+  transform: scale(1.1);
+}
+
+/* Gradient overlay that appears on hover */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.news-card:hover .image-overlay {
+  opacity: 1;
+}
+
+/* Content styles for text and Read More link */
+.news-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-content h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+  color: #333;
+  line-height: 1.2;
+}
+
+.news-content p {
+  flex: 1;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.news-content a {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.news-content a:hover {
+  background: #0056b3;
+  transform: translateX(5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .news-card {
+    margin: 0 1rem;
+  }
+}

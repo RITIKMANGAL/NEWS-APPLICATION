@@ -1,0 +1,14 @@
+/* In App.css or index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+  50% { background: linear-gradient(135deg, #fda085 0%, #f6d365 100%); }
+  100% { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+}
