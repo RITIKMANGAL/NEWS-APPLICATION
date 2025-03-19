@@ -1,7 +1,7 @@
 # Project Title
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue.svg)](https://your-live-demo-link.com)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue.svg)]([https://your-live-demo-link.com](https://news-application-ten-lyart.vercel.app/))
 
 A modern, responsive news application built with **React** and **Vite**.
 
